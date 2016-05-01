@@ -42,7 +42,7 @@ sub_household$Sub_metering_3 <- as.numeric(sub_household$Sub_metering_3)
 
 png("plot4.png", width=480, height=480)
 
-par(mfrow = c(2, 2), width=480, height=480)
+par(mfrow = c(2, 2))
 
 ## Plot 1
 
