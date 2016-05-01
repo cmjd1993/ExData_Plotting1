@@ -15,8 +15,8 @@ sub_household <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
 sub_household$Global_active_power <- as.numeric(sub_household$Global_active_power)
 
-## Using str() function, create a new variable "date_time" that give full 
-## date & time. 
+## Using strptime() command, create a new variable "date_time" that give full 
+## date & time.
 
 sub_household$date_time <- strptime(paste(subSetData$Date, 
                          subSetData$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 

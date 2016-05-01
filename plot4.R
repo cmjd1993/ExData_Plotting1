@@ -21,8 +21,8 @@ sub_household$Global_reactive_power <-
 
 sub_household$Voltage <- as.numeric(sub_household$Voltage)
 
-## Using str() function, create a new variable "date_time" that give full 
-## date & time. 
+## Using strptime() command, create a new variable "date_time" that give full 
+## date & time.. 
 
 sub_household$date_time <- strptime(paste(subSetData$Date, 
                         subSetData$Time, sep=" "), "%d/%m/%Y %H:%M:%S") 
