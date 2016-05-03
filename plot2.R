@@ -9,7 +9,7 @@ household <- read.csv(paste0(path,"household_power_consumption.txt"),
 ## subset for the dates 01/02/2007 & 02/02/2007 as advised in exercise
 ## instructions
 
-sub_household <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
+sub_household <- household[household$Date %in% c("1/2/2007","2/2/2007") ,]
 
 ## Set Global_active_power to a numeric using the as.numeric command
 
